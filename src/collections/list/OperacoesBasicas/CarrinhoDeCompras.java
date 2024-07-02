@@ -86,6 +86,9 @@ public class CarrinhoDeCompras {
         // Exibindo os itens no carrinho
         carrinhoDeCompras.exibirItens();
 
+        // Calculando e exibindo o valor total da compra
+        System.out.println("O valor total da compra é = " + carrinhoDeCompras.calcularValorTotal());
+
         // Removendo um item do carrinho
         carrinhoDeCompras.removerItem("melancia");
 
