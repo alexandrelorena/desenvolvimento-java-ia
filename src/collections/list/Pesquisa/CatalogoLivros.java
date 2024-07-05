@@ -67,7 +67,6 @@ public class CatalogoLivros {
         catalogoLivros.adicionarLivro("Livro 9", "Hipotenusa da Silva", 1990);
         catalogoLivros.adicionarLivro("Livro 10", "Hipotenusa da Silva", 1991);
 
-//        catalogoLivros.pesquisarPorAutor(Livro);
 
         System.out.println(catalogoLivros.pesquisarPorAutor("Hipotenusa da Silva"));
 
