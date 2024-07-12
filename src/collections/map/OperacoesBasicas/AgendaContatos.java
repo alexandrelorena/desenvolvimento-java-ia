@@ -15,15 +15,25 @@ public class AgendaContatos {
         agendaContatoMap.put(nome, telefone);
     }
 
+//    public void removerContato(String nome) {
+//        if(!agendaContatoMap.isEmpty()) {
+//            agendaContatoMap.remove(nome);
+//        }
+//    }
+
     public void removerContato(String nome) {
-        if(!agendaContatoMap.isEmpty()) {
-            agendaContatoMap.remove(nome);
-        }
+        agendaContatoMap.remove(nome);
     }
 
     public void exibirContatos() {
         System.out.println(agendaContatoMap);
     }
+
+//    public void exibirContatos() {
+//        for (Map.Entry<String, Integer> entry : agendaContatoMap.entrySet()) {
+//            System.out.println("Nome: " + entry.getKey() + ", Telefone: " + entry.getValue());
+//        }
+//    }
 
     public Integer pesquisarPorNome(String nome) {
         Integer numeroPorNome = null;

@@ -14,12 +14,16 @@ public class Dicionario {
         dicionario.put(palavra, definicao);
     }
 
+//    public void removerPalavra(String palavra) {
+//        if (!dicionario.isEmpty()) {
+//            dicionario.remove(palavra);
+//        } else {
+//            System.out.println("O dicionário está vazio.");
+//        }
+//    }
+
     public void removerPalavra(String palavra) {
-        if (!dicionario.isEmpty()) {
-            dicionario.remove(palavra);
-        } else {
-            System.out.println("O dicionário está vazio.");
-        }
+        dicionario.remove(palavra);
     }
 
     public String pesquisarPorPalavra(String palavra) {
@@ -30,9 +34,19 @@ public class Dicionario {
         return "Linguagem não encontrada no dicionário.";
     }
 
+//    public void exibirPalavras() {
+//        if (!dicionario.isEmpty()) {
+//            System.out.println(dicionario);
+//        } else {
+//            System.out.println("O dicionário está vazio.");
+//        }
+//    }
+
     public void exibirPalavras() {
         if (!dicionario.isEmpty()) {
-            System.out.println(dicionario);
+            for (Map.Entry<String, String> entry : dicionario.entrySet()) {
+                System.out.println("Palavra: " + entry.getKey() + ", Definição: " + entry.getValue());
+            }
         } else {
             System.out.println("O dicionário está vazio.");
         }
